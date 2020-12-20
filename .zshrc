@@ -84,9 +84,6 @@ tmux
 jump
 )
 
-# launch tmux at startup of ohmyz.sh 
-#ZSH_TMUX_AUTOSTART="true"
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -120,6 +117,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom
 
+# launch tmux at startup of ohmyz.sh 
+ZSH_TMUX_AUTOSTART="true"
+
+# Add this to $PATH for pwntools, etc
 export PATH=/home/morpheush3x/.local/bin:$PATH
 
 ## enable advanced calculation in bc by default

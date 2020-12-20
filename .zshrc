@@ -34,7 +34,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
+DISABLE_UPDATE_PROMPT="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -76,12 +76,13 @@ HIST_STAMPS="dd/mm/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git
-zsh-autosuggestions
-zsh-completions
-zsh-syntax-highlighting
+zsh-autosuggestions     # --
+zsh-completions         # | https://www.tronyxworld.be/2020/zsh_omz_p10k/
+zsh-syntax-highlighting # --
 encode64
-tmux
+tmux                    # For 'ZSH_TMUX_AUTOSTART="true"'
 jump
+colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh

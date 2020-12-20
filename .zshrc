@@ -81,9 +81,7 @@ zsh-completions
 zsh-syntax-highlighting
 encode64
 tmux
-vagrant
-composer
-themes
+jump
 )
 
 # launch tmux at startup of ohmyz.sh 
@@ -119,3 +117,37 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Custom
+
+export PATH=/home/morpheush3x/.local/bin:$PATH
+
+## enable advanced calculation in bc by default
+alias bc='bc -l'
+
+## xclip command
+alias setclip='xclip -selection c'
+alias getclip='xclip -selection c -o'
+
+## netstat command
+alias ports='sudo netstat -tulanp | grep LISTENING'
+
+## ip command
+alias ip='ip -color'
+alias ipb='ip -color -brief'
+
+alias '?'='echo $?'
+
+if [[ hostname == 'MorpheusH3x-Laptop'  ]]
+then
+        alias luminosity='xrandr --output eDP-1 --brightness'
+        alias python='python3.8'
+        
+        export GO111MODULE=on
+fi
+
+
+if [[ hostname == 'RPI' ]]
+then
+        alias temp="exec argonone-tempmon 2>&1 | grep -E \\'[0-9]{5}'"
+fi

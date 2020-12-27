@@ -85,8 +85,6 @@ jump
 colored-man-pages
 )
 
-source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -131,6 +129,9 @@ alias bc='bc -l'
 alias setclip='xclip -selection c'
 alias getclip='xclip -selection c -o'
 
+## share command
+alias termbin='nc termbin.com 9999'
+
 ## netstat command
 alias ports='sudo netstat -tulanp | grep LISTENING'
 
@@ -153,3 +154,6 @@ if [[ hostname == 'RPI' ]]
 then
         alias temp="exec argonone-tempmon 2>&1 | grep -E \\'[0-9]{5}'"
 fi
+
+# Keep it at the EOF
+source $ZSH/oh-my-zsh.sh

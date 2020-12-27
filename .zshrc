@@ -115,6 +115,10 @@ colored-man-pages
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Custom
+# Change autosuggestion color 
+# didnt fit very well with Nord Theme of
+# Gnome Termianl and Tmux
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 
 # launch tmux at startup of ohmyz.sh 
 ZSH_TMUX_AUTOSTART="true"

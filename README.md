@@ -12,3 +12,6 @@ dconf list /org/gnome/terminal/legacy/profiles:/:<ID>/
 # Changing background color i.e in blue here
 dconf write /org/gnome/terminal/legacy/profiles:/:<ID>/background-color "'rgb(0,0,255)'"
 ```
+
+Source:
+- https://unix.stackexchange.com/questions/133914/set-gnome-terminal-background-text-color-from-bash-script

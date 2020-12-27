@@ -145,6 +145,10 @@ alias ipb='ip -color -brief'
 
 alias '?'='echo $?'
 
+## Add nord-dircolors
+# https://github.com/arcticicestudio/nord-dircolors
+test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
+
 if [[ hostname == 'MorpheusH3x-Laptop'  ]]
 then
         alias luminosity='xrandr --output eDP-1 --brightness'

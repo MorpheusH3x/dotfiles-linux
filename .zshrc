@@ -150,6 +150,9 @@ if [[ ! -d "$ZSH/completions" || ! -f "$ZSH/completions/_gh" ]]; then
 	echo "gh added completions: gh completion --shell zsh > $ZSH/completions/_gh"
 fi
 
+## update command
+alias update=`sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y`
+
 alias '?'='echo $?'
 
 ## Add nord-dircolors

@@ -143,6 +143,13 @@ alias ports='sudo netstat -tulanp | grep LISTENING'
 alias ip='ip -color'
 alias ipb='ip -color -brief'
 
+## gh cli autocompletion
+if [[ ! -d "$ZSH/completions" || ! -f "$ZSH/completions/_gh" ]]; then
+	mkdir -pv $ZSH/completions
+	gh completion --shell zsh > $ZSH/completions/_gh
+	echo "gh added completions: gh completion --shell zsh > $ZSH/completions/_gh"
+fi
+
 alias '?'='echo $?'
 
 ## Add nord-dircolors

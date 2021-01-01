@@ -123,8 +123,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 # launch tmux at startup of ohmyz.sh 
 ZSH_TMUX_AUTOSTART="true"
 
-# Add this to $PATH for pwntools, etc
-export PATH=/home/morpheush3x/.local/bin:$PATH
+# Add this to $PATH for ...
+export PATH=/home/morpheush3x/.local/bin:$PATH # pwntools
+export PATH=$PATH:/usr/local/go/bin # go
 
 ## enable advanced calculation in bc by default
 alias bc='bc -l'

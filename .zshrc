@@ -83,6 +83,7 @@ encode64
 tmux                    # For 'ZSH_TMUX_AUTOSTART="true"'
 jump
 colored-man-pages
+virtualenv              # For displaying the current py venv
 )
 
 # User configuration

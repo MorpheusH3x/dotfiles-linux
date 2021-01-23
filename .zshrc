@@ -125,8 +125,9 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 ZSH_TMUX_AUTOSTART="true"
 
 # Add this to $PATH for ...
-export PATH=/home/morpheush3x/.local/bin:$PATH # pwntools
+export PATH=$PATH:/home/$USER/.local/bin # pwntools
 export PATH=$PATH:/usr/local/go/bin # go
+export PATH=$PATH:/home/$USER/go/bin
 
 ## enable advanced calculation in bc by default
 alias bc='bc -l'

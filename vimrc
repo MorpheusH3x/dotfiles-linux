@@ -148,6 +148,10 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" Map section
+
+map <F2> :NERDTreeToggle<CR>
+
 " Plugin Setup
 call plug#begin()
 Plug 'tpope/vim-sensible'

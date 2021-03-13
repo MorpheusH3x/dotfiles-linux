@@ -128,7 +128,8 @@ ZSH_TMUX_AUTOSTART="true"
 export PATH=$PATH:/home/$USER/.local/bin # pwntools
 export PATH=$PATH:/usr/local/go/bin # go
 export PATH=$PATH:/home/$USER/go/bin
-export PATH=$PATH:/opt/bitwarden
+export PATH=$PATH:/opt/bitwarden # bitwarden cli
+export PATH=$PATH:/opt/ImHex/bin # ImHex Hex Editor
 
 ## enable advanced calculation in bc by default
 alias bc='bc -l'

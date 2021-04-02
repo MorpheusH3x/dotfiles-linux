@@ -158,6 +158,8 @@ fi
 ## update command
 alias update='sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo apt autoremove -y'
 
+alias update-pip3='pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U'
+
 alias '?'='echo $?'
 
 ## Add nord-dircolors
